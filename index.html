@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Test your Python, SQL and Rust skills with a randomized technical quiz.">
+  <title>TechQuiz | Python, SQL & Rust</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="#">Tech<span>Quiz</span></a>
+    <span class="tag">PYTHON · SQL · RUST</span>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <p class="eyebrow">TEST YOUR KNOWLEDGE</p>
+      <h1>Technical Skills Quiz</h1>
+      <p class="subtitle">
+        30 randomized questions covering Python, SQL and Rust.
+      </p>
+      <div class="language-tags">
+        <span>Python</span>
+        <span>SQL</span>
+        <span>Rust</span>
+      </div>
+    </section>
+
+    <section class="quiz-card" id="quizCard">
+      <div class="quiz-meta">
+        <span id="questionNumber">Question 1 of 30</span>
+        <span id="topic">Python</span>
+      </div>
+
+      <div
+        class="progress-track"
+        id="progressTrack"
+        role="progressbar"
+        aria-label="Quiz progress"
+        aria-valuemin="0"
+        aria-valuemax="30"
+        aria-valuenow="0"
+      >
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+      <h2 id="question">Loading question...</h2>
+      <div id="options" class="options"></div>
+      <p id="feedback" class="feedback" aria-live="polite"></p>
+
+      <div class="quiz-footer">
+        <span id="answeredCount">0 of 30 answered</span>
+        <button id="nextBtn" class="primary-btn" disabled>
+          Next Question →
+        </button>
+      </div>
+    </section>
+
+    <section class="result-card" id="resultCard" hidden>
+      <div class="result-icon" id="resultIcon">🏆</div>
+      <p class="eyebrow">QUIZ COMPLETED</p>
+      <h2 id="resultTitle">Your Results</h2>
+      <p class="result-score" id="resultScore">0 / 30</p>
+      <p id="resultPercentage" class="result-percentage">0%</p>
+
+      <div class="result-track">
+        <div class="progress-fill" id="resultFill"></div>
+      </div>
+
+      <div id="topicResults" class="topic-results"></div>
+      <p id="resultMessage"></p>
+
+      <button id="restartBtn" class="primary-btn">
+        ↻ Try a New Quiz
+      </button>
+    </section>
+
+    <p class="page-note">
+      Learn. Practice. Improve. | Built with HTML, CSS and JavaScript
+    </p>
+  </main>
+</body>
+</html>
